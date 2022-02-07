@@ -4,15 +4,23 @@ public class Java_Function {
     
     public static void main(String[] args) {
 
-        /* Apply 함수 */
+        /* apply 함수 */
         Person_Java person = new Person_Java();
 
         person.firstName = "KIM";
         person.lastName = "KYUNGWOOK";
 
-        /* Also 함수 */
+        /* also 함수 */
         int value = new Random().nextInt(100);
         System.out.println(value);
+
+        /* let 함수 */
+        Integer number = null;
+        String sumNumberStr = null;
+
+        if (number != null) {
+            sumNumberStr = "" + sum(10, number);
+        }
     }
 }
 
